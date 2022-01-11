@@ -66,7 +66,7 @@ void MCM(unsigned int n, list<uint32_t> Basis_li, list<uint32_t> MCM_Choice, str
     cout << " -->  m <= n :  Everything seems fine." << endl;
     cout << "Make sure that the set of basis elements provided are orthogonal to each other." << endl;
   }
-
+  unsigned int r = Basis_li.size();
 
   cout << endl << "*******************************************************************************************"; 
   cout << endl << "*********************************  Change the data basis   ********************************"; 
@@ -127,7 +127,7 @@ void MCM(unsigned int n, list<uint32_t> Basis_li, list<uint32_t> MCM_Choice, str
   cout << endl << "\t 'r' must be smaller or equal to the number 'm' of basis element provided, 'm=Basis_li.size()',";
   cout << endl << "\t which must be smaller or equal to the number 'n' of spin variables." << endl << endl;
 
-  int r1 = n;
+  int r1 = r;
   double LogE_BestMCM1 = 0;
 
   if (r1 <= Basis_li.size())
@@ -157,7 +157,7 @@ void MCM(unsigned int n, list<uint32_t> Basis_li, list<uint32_t> MCM_Choice, str
 // ***             - the function doesn't print the logE-values for all the tested MCMs. To activate --> print_bool = true 
 /******************************************************************************/
 
-  int r2 = n;
+  int r2 = r;
   double LogE_BestMCM2 = 0;
 
   if (r2 <= Basis_li.size())
@@ -188,7 +188,7 @@ void MCM(unsigned int n, list<uint32_t> Basis_li, list<uint32_t> MCM_Choice, str
 // ***             - the function doesn't print the logE-values for all the tested MCMs. To activate --> print_bool = true 
 /******************************************************************************/
 
-  int r3 = n;
+  int r3 = r;
   double LogE_BestMCM3 = 0;
 
   if (r3 <= Basis_li.size())
