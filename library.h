@@ -4,7 +4,6 @@
 
 using namespace std;
 
-void MCM(unsigned int n, list<uint32_t> Basis_Choice, list<uint32_t> MCM_Choice, string datafilename);
 
 /******************************************************************************/
 /******************************************************************************/
