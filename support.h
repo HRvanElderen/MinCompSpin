@@ -9,4 +9,4 @@ using namespace std;
 string int_to_bstring(unsigned x, unsigned int n);
 
 // Counts all the set bits of an int.
-unsigned int countSetBits(unsigned int n);
+unsigned int count_set_bits(unsigned int n);

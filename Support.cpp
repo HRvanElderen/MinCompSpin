@@ -18,7 +18,7 @@ string int_to_bstring(unsigned int x, unsigned int n)
 }
 
 // Counts all the set bits of an int.
-unsigned int countSetBits(unsigned int n)
+unsigned int count_set_bits(unsigned int n)
 {
     unsigned int count = 0;
     while (n) {
